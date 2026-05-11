@@ -1050,7 +1050,7 @@ Student Question: {question}
 Answer:"""
 
     try:
-        model = genai.GenerativeModel("gemma-4-26b-a4b-it")
+        model = genai.GenerativeModel("gemma-4-26b")
         response = model.generate_content(
             prompt,
             generation_config=genai.types.GenerationConfig(
