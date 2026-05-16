@@ -1140,8 +1140,7 @@ def _load_all():
         import traceback; traceback.print_exc()
 
 import threading
-threading.Thread(target=_load_all, daemon=True).start()
-
+_load_all()
 
 # ══════════════════════════════════════════════════════════════════════════════
 #  RATE LIMITING
